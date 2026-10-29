@@ -16,7 +16,7 @@ const timeline = [
 
 <template>
   <main class="page-shell about-page">
-    <SectionWithProfile>
+    <SectionWithProfile :show-sidebar="false">
       <header class="about-hero">
         <div class="about-copy"><p class="page-kicker">ABOUT SEVENNINE</p><h1>你好，我是<br /><span>SevenNine。</span></h1><p>一名关注全栈 Web、移动开发与服务部署的 IT 程序员。喜欢把陌生问题拆开、验证，再整理成可以复用的代码与文档。</p><div class="domain-list"><span>Web 开发</span><span>移动应用</span><span>服务部署</span><span>工程实践</span></div><div class="hero-actions"><RouterLink class="primary-button" to="/projects">查看项目作品</RouterLink><a class="secondary-button" href="mailto:hello@sevennine.top">联系我</a></div></div>
         <div class="code-card"><div class="code-head"><i></i><i></i><i></i><span>developer.js</span></div><pre><span>const</span> developer = {

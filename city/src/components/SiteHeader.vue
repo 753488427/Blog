@@ -259,6 +259,7 @@ watch(
     align-items: center;
     gap: 10px;
     padding: 0;
+    min-width: 0;
   }
 
   .brand-mark {
@@ -295,6 +296,7 @@ watch(
 
   .header-actions {
     display: flex;
+    flex: 0 0 auto;
   }
 
   .icon-button,
@@ -330,6 +332,16 @@ watch(
   .mobile-nav a.router-link-active {
     color: var(--brand);
     border-color: color-mix(in srgb, var(--brand) 35%, var(--line));
+  }
+}
+
+@media (max-width: 420px) {
+  .header-inner {
+    width: calc(100% - 24px);
+  }
+
+  .mobile-nav {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 </style>

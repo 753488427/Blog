@@ -7,9 +7,7 @@ import SiteHeader from './components/SiteHeader.vue'
   <div class="site-frame">
     <SiteHeader />
     <RouterView v-slot="{ Component }">
-      <Transition name="page" mode="out-in">
-        <component :is="Component" />
-      </Transition>
+      <component :is="Component" />
     </RouterView>
     <SiteFooter />
   </div>

@@ -319,39 +319,14 @@ const contacts = [
   max-width: 100%;
   overflow: hidden;
   color: var(--profile-muted);
-  font: 750 9px/1.15 "PingFang SC", "Microsoft YaHei", sans-serif;
+  font: 750 10px/1.2 "PingFang SC", "Microsoft YaHei", sans-serif;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1400px) {
   .profile-sidebar {
-    position: static;
-    grid-template-columns: 1.35fr 1fr 1fr;
-  }
-
-  .profile-card {
-    grid-row: span 1;
-  }
-}
-
-@media (max-width: 820px) {
-  .profile-sidebar {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .profile-card {
-    grid-column: 1 / -1;
-  }
-}
-
-@media (max-width: 560px) {
-  .profile-sidebar {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-card {
-    grid-column: auto;
+    display: none;
   }
 }
 </style>
